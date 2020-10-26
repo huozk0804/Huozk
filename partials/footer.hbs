@@ -1,0 +1,77 @@
+<footer class="site-footer container">
+    <div class="social">
+        {{#if @site.facebook}}
+        <a class="social-item social-item-facebook" href="{{facebook_url @site.facebook}}" target="_blank"
+            rel="noopener noreferrer" aria-label="Facebook">
+            <svg class="icon">
+                <use xlink:href="#facebook"></use>
+            </svg>
+        </a>
+        {{/if}}
+        {{#if @site.twitter}}
+        <a class="social-item social-item-twitter" href="{{twitter_url @site.twitter}}" target="_blank"
+            rel="noopener noreferrer" aria-label="Twitter">
+            <svg class="icon">
+                <use xlink:href="#twitter"></use>
+            </svg>
+        </a>
+        {{/if}}
+        <a class="social-item social-item-wechat" href="https://static.huozk.com/19950804_wechatqrcode.jpg"
+            target="_blank" rel="noopener noreferrer" aria-label="Wechat">
+            <svg class="icon">
+                <use xlink:href="#wechat"></use>
+            </svg>
+        </a>
+        <a class="social-item social-item-niconico" href="https://space.bilibili.com/279014900" target="_blank"
+            rel="noopener noreferrer" aria-label="Niconico">
+            <svg class="icon">
+                <use xlink:href="#niconico"></use>
+            </svg>
+        </a>
+        <a class="social-item social-item-zhihu" href="https://www.zhihu.com/people/fanxingyunchen" target="_blank"
+            rel="noopener noreferrer" aria-label="Zhihu">
+            <svg class="icon">
+                <use xlink:href="#zhihu"></use>
+            </svg>
+        </a>
+        <a class="social-item social-item-github" href="https://github.com/huozk0804" target="_blank"
+            rel="noopener noreferrer" aria-label="Github">
+            <svg class="icon">
+                <use xlink:href="#github"></use>
+            </svg>
+        </a>
+        <a class="social-item social-item-gmail" href="mailto:hi@huozk.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Gmail">
+            <svg class="icon">
+                <use xlink:href="#gmail"></use>
+            </svg>
+        </a>
+        <a class="social-item social-item-rss" href="{{@site.url}}/rss/" target="_blank" rel="noopener noreferrer"
+            aria-label="RSS">
+            <svg class="icon">
+                <use xlink:href="#rss"></use>
+            </svg>
+        </a>
+    </div>
+
+    <div class="copyright">
+        Powered by <a href="https://ghost.org/" target="_blank" rel="noopener noreferrer">Ghost</a>
+    </div>
+
+    <nav class="footer-nav">
+        {{navigation type="secondary"}}
+        <a class="menu-item js-theme" href="#" data-system="System theme" data-dark="Dark theme"
+            data-light="Light theme">
+            <svg class="icon theme-icon theme-icon-system">
+                <use xlink:href="#circle-half-full"></use>
+            </svg>
+            <svg class="icon theme-icon theme-icon-dark">
+                <use xlink:href="#brightness-2"></use>
+            </svg>
+            <svg class="icon theme-icon theme-icon-light">
+                <use xlink:href="#white-balance-sunny"></use>
+            </svg>
+            <span class="theme-text">System theme</span>
+        </a>
+    </nav>
+</footer>
