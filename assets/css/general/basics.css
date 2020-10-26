@@ -16,9 +16,18 @@
     --twitter-color: #1da1f2;
     --rss-color: #f26522;
     --animation-base: ease-in-out;
-    --font-base: muli, "Noto Serif SC", "Source Han Serif SC",
-        "Source Han Serif CN", serif, -apple-system, blinkmacsystemfont,
-        segoe ui, helvetica, arial, sans-serif;
+    --font-base:
+        muli,
+        "Noto Serif SC",
+        "Source Han Serif SC",
+        "Source Han Serif CN",
+        serif,
+        -apple-system,
+        blinkmacsystemfont,
+        segoe ui,
+        helvetica,
+        arial,
+        sans-serif;
     --navbar-height: 80px;
 }
 
