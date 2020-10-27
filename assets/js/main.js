@@ -226,6 +226,8 @@ function table() {
     }
 }
 
+//TODO:返回顶部
+
 function toc() {
     'use strict';
     if (body.hasClass('post-template')) {
@@ -570,3 +572,7 @@ function pswp(container, element, trigger, caption, isGallery) {
         onThumbnailsClick(e);
     });
 }
+
+//TODO:highlight的方法
+
+

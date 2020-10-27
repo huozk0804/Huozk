@@ -41,6 +41,7 @@
                                 <button class="button-text menu-item menu-item-cta members-upgrade" data-portal="account/plans">Upgrade</button>
                             {{/unless}}
                         {{else}}
+                            <!--TODO:去掉登陆会员按钮-->
                             <button class="button-text menu-item members-login" data-portal="signin">Login</button>
                             <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
                         {{/if}}
@@ -57,6 +58,7 @@
                     <button class="button-text menu-item menu-item-cta members-upgrade" data-portal="account/plans">Upgrade</button>
                 {{/unless}}
             {{else}}
+                <!--TODO:去掉登陆会员按钮-->
                 <button class="button-text menu-item members-login" data-portal="signin">Login</button>
                 <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
             {{/if}}
@@ -74,6 +76,13 @@
     {{#post}}
         <header class="sticky">
             <div class="sticky-title">{{title}}</div>
+            <!--添加一个返回顶部的按钮-->
+            <button class="button-icon sticky-top-button" id="sticky-top-button" aria-label="Return to Top" >
+                 <svg class="icon">
+                    <use xlink:href="#arrow-left"></use>
+                </svg>
+                <a href="" ></a>
+            </button>
             <button class="button-icon sticky-toc-button" aria-label="Table of Contents">
                 <svg class="icon">
                     <use xlink:href="#table-of-contents"></use>

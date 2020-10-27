@@ -28,10 +28,8 @@
         {{#if feature_image}}
             {{#unless no_image}}
                 <div class="single-media kg-width-{{width}} u-placeholder horizontal">
-                    <img class="lazyload u-object-fit" data-srcset="{{> srcset}}"
-                        data-sizes="auto" src="{{img_url feature_image size="l"}}"
-                        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        alt="{{title}}">
+                    <img class="lazyload u-object-fit" data-srcset="{{> srcset}}" data-sizes="auto" src="{{img_url feature_image size="l"}}"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="{{title}}">
                 </div>
             {{/unless}}
         {{/if}}
@@ -46,12 +44,13 @@
                             <section class="single-cta">
                                 <h2 class="single-cta-title">Enjoying these posts? Subscribe for more</h2>
                                 <button class="button single-cta-button" data-portal="signup">Subscribe now</button>
+                                <!--TODO:去掉文章页，内容底部的注册会员按钮-->
                                 <br>
                                 <button class="button-text single-cta-footer" data-portal="signin">Already have an account? Sign in</button>
                             </section>
                         {{/unless}}
-                    {{/if}}
-                {{/is}}
+                     {{/if}}
+                 {{/is}}
             {{else}}
                 <p>
                     You don't have access to this post at the moment,
@@ -68,7 +67,7 @@
                     <br>
                     <button class="button-text single-cta-footer" data-portal="signin">Already have an account? Sign in</button>
                 </section>
-            {{/if}}
+             {{/if}}
         {{else}}
             {{content}}
         {{/if}}
@@ -77,14 +76,13 @@
         <footer class="single-footer container medium">
             <div class="single-footer-left">
                 {{#prev_post}}
-                    <div class="navigation navigation-previous">
-                        <a class="navigation-link" href="{{url}}"
-                            aria-label="Previous post">
-                            <svg class="icon navigation-icon">
-                                <use xlink:href="#arrow-left"></use>
-                            </svg>
-                        </a>
-                    </div>
+                <div class="navigation navigation-previous">
+                    <a class="navigation-link" href="{{url}}" aria-label="Previous post">
+                        <svg class="icon navigation-icon">
+                            <use xlink:href="#arrow-left"></use>
+                        </svg>
+                    </a>
+                </div>
                 {{/prev_post}}
             </div>
             <div class="single-footer-middle">
@@ -92,24 +90,23 @@
                     <h3 class="single-footer-title">Published by:</h3>
                     <div class="author-list">
                         {{#foreach authors}}
-                            <div
-                                class="author-image-placeholder u-placeholder square">
-                                <a href="{{url}}" title="{{name}}">
-                                    <img class="author-image lazyload u-object-fit"
-                                        data-srcset="{{img_url profile_image size="xs"}}"
-                                        src="{{img_url profile_image size="xs"}}"
-                                        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                        alt="{{name}}">
-                                </a>
-                            </div>
+                        <div class="author-image-placeholder u-placeholder square">
+                            <a href="{{url}}" title="{{name}}">
+                                <img class="author-image lazyload u-object-fit"
+                                    data-srcset="{{img_url profile_image size="xs"}}"
+                                    src="{{img_url profile_image size="xs"}}"
+                                    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    alt="{{name}}">
+                            </a>
+                        </div>
                         {{/foreach}}
                     </div>
                 </div>
                 <div class="single-footer-bottom">
                     <div class="share">
                         <a class="share-link share-link-facebook"
-                            href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}"
-                            target="_blank" rel="noopener noreferrer">
+                            href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}" target="_blank"
+                            rel="noopener noreferrer">
                             <svg class="icon icon-facebook">
                                 <use xlink:href="#facebook"></use>
                             </svg>
@@ -128,14 +125,13 @@
             </div>
             <div class="single-footer-right">
                 {{#next_post}}
-                    <div class="navigation navigation-next">
-                        <a class="navigation-link" href="{{url}}"
-                            aria-label="Next post">
-                            <svg class="icon navigation-icon">
-                                <use xlink:href="#arrow-right"></use>
-                            </svg>
-                        </a>
-                    </div>
+                <div class="navigation navigation-next">
+                    <a class="navigation-link" href="{{url}}" aria-label="Next post">
+                        <svg class="icon navigation-icon">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
                 {{/next_post}}
             </div>
         </footer>
