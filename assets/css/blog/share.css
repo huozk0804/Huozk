@@ -31,10 +31,19 @@
     margin-right: 0.4rem;
 }
 
+.share-link .icon-gmail {
+    margin-right: 0.4rem;
+}
+
 .share-link-facebook {
     background-color: var(--facebook-color);
 }
 
 .share-link-twitter {
     background-color: var(--twitter-color);
+}
+
+.share-link-gmail{
+    color: black;
+    background-color: var(--gmail-color);
 }

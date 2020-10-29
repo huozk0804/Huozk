@@ -26,6 +26,19 @@
     white-space: nowrap;
 }
 
+.sticky-top-button{
+    flex-shrink: 0;
+    margin-right: -6px;
+}
+
+.sticky-top-button .icon {
+    width: 24px;
+    height: 24px;
+    /*让向左的箭头向上旋转*/
+    transform: rotate(0.25turn);
+    -webkit-transform: rotate(0.25turn);
+}
+
 .sticky-toc-button {
     flex-shrink: 0;
     margin-right: -6px;

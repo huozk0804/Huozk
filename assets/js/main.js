@@ -17,6 +17,7 @@ $(function () {
     video();
     gallery();
     table();
+    topbtn();
     toc();
     modal();
     search();
@@ -227,6 +228,19 @@ function table() {
 }
 
 //TODO:返回顶部
+function topbtn(){
+    'use strict'
+    if(body.hasClass('post-template')){
+        var topbtn = $('.sticky-top-button');
+        topbtn.on('click',function(){
+            window.scrollTo({
+                left: 0,
+                top: 0,
+                behavior: 'smooth'
+            })  
+        });
+    }
+}
 
 function toc() {
     'use strict';
