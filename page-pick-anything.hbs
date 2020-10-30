@@ -1,0 +1,52 @@
+<!--这是 拾事 页面-->
+{{!< default}}
+
+<div class="content-area">
+    <main class="site-main">
+        <article class="single {{post_class}}">
+            <header class="single-header kg-canvas">
+                <!--页面头部内容显示-->
+                {{#is "page"}}
+                    {{#post}}
+                    <!--Pick-Anything 最新一篇文章标题显示-->
+                    <h1 class="single-title">
+                        {{#get "posts" filter="primary_tag:pick-anything"}}
+                            {{#foreach posts limit="1"}}  
+                                {{title}}
+                            {{/foreach}}
+                        {{else}}
+                            <!--TODO:有瑕疵当获取不到相关文章，就使用页面的默认title-->
+                        {{/get}} 
+                    </h1>    
+                        {{#if custom_excerpt}}
+                            <div class="single-excerpt">
+                                {{custom_excerpt}}
+                            </div>
+                        {{/if}}
+                        {{#if feature_image}}
+                            {{#unless no_image}}
+                                <div class="single-media kg-width-full u-placeholder horizontal">
+                                    <img class="lazyload u-object-fit" data-srcset="{{> srcset}}" data-sizes="auto" src="{{img_url feature_image size="l"}}"
+                                        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="{{title}}">
+                                </div>
+                            {{/unless}}
+                        {{/if}}
+                    {{/post}}
+                {{/is}}
+            </header>
+            <div class="single-content kg-canvas u-text-format">
+                {{#get "posts" filter="primary_tag:pick-anything"}}
+                    {{#foreach posts limit="1"}}  
+                        {{content}}
+                    {{/foreach}}
+                {{else}}
+                    <!--TODO:有瑕疵当获取不到相关文章，就使用页面的默认content-->
+                {{/get}} 
+            </div>
+        </article>
+    </main>
+</div>
+
+
+
+

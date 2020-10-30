@@ -587,6 +587,4 @@ function pswp(container, element, trigger, caption, isGallery) {
     });
 }
 
-//TODO:highlight的方法
-
 
