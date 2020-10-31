@@ -35,6 +35,30 @@
     margin-right: 0.4rem;
 }
 
+.share-link .icon-sinaweibo {
+    margin-right: 0.4rem;
+}
+
+.share-link .icon-tencentqq {
+    margin-right: 0.4rem;
+}
+
+.share-link .icon-douban {
+    margin-right: 0.4rem;
+}
+
+.share-link .icon-alipay {
+    margin-right: 0.4rem;
+}
+
+.share-link .icon-wechat {
+    margin-right: 0.4rem;
+}
+
+.share-link .icon-paypal {
+    margin-right: 0.4rem;
+}
+
 .share-link-facebook {
     background-color: var(--facebook-color);
 }
@@ -44,6 +68,29 @@
 }
 
 .share-link-gmail{
-    color: black;
-    background-color: var(--gmail-color);
+    background-color: #db4539;
+}
+
+.share-link-sinaweibo{
+    background-color: rgb(244, 12, 25);
+}
+
+.share-link-tencentqq{
+    background-color:rgb(1, 81, 223);
+}
+
+.share-link-douban{
+    background-color: rgb(29, 159, 103);
+}
+
+.share-link-alipay{
+    background-color: rgb(0, 170, 239);
+}
+
+.share-link-wechat{
+    background-color: rgb(67, 175, 64);
+}
+
+.share-link-paypal{
+    background-color: rgb(18, 57, 132);
 }
