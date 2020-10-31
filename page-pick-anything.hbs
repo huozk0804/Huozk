@@ -4,20 +4,10 @@
 <div class="content-area">
     <main class="site-main">
         <article class="single {{post_class}}">
-            <header class="single-header kg-canvas">
-                <!--页面头部内容显示-->
-                {{#is "page"}}
-                    {{#post}}
-                    <!--Pick-Anything 最新一篇文章标题显示-->
-                    <h1 class="single-title">
-                        {{#get "posts" filter="primary_tag:pick-anything"}}
-                            {{#foreach posts limit="1"}}  
-                                {{title}}
-                            {{/foreach}}
-                        {{else}}
-                            <!--TODO:有瑕疵当获取不到相关文章，就使用页面的默认title-->
-                        {{/get}} 
-                    </h1>    
+            {{#get "posts" filter="primary_tag:pick-anything"}}
+                {{#foreach posts limit="1"}}  
+                    <header class="single-header kg-canvas">
+                        <h1 class="single-title">{{title}}</h1>
                         {{#if custom_excerpt}}
                             <div class="single-excerpt">
                                 {{custom_excerpt}}
@@ -31,18 +21,14 @@
                                 </div>
                             {{/unless}}
                         {{/if}}
-                    {{/post}}
-                {{/is}}
-            </header>
-            <div class="single-content kg-canvas u-text-format">
-                {{#get "posts" filter="primary_tag:pick-anything"}}
-                    {{#foreach posts limit="1"}}  
-                        {{content}}
-                    {{/foreach}}
+                    </header>
+                    <div class="single-content kg-canvas u-text-format">
+                       {{content}}
+                    </div>
+                {{/foreach}}
                 {{else}}
-                    <!--TODO:有瑕疵当获取不到相关文章，就使用页面的默认content-->
+                <!--TODO:有瑕疵当获取不到相关文章，就使用页面的默认title-->
                 {{/get}} 
-            </div>
         </article>
     </main>
 </div>

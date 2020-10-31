@@ -57,7 +57,8 @@
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "8.0.0",
         "gulp-stylelint": "^13.0.0",
-        "gulp-uglify": "3.0.2",
+        "gulp-uglify-es": "2.0.0",
+        "gulp-util": "^3.0.8",
         "gulp-zip": "5.0.2",
         "postcss-easy-import": "3.0.0",
         "pump": "3.0.0",
@@ -67,5 +68,8 @@
     },
     "browserslist": [
         "defaults"
-    ]
+    ],
+    "dependencies": {
+        "gulp-uglify-es": "^2.0.0"
+    }
 }

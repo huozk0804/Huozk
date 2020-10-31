@@ -6,7 +6,7 @@ const livereload = require('gulp-livereload');
 const gulpStylelint = require('gulp-stylelint');
 const postcss = require('gulp-postcss');
 const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const beeper = require('beeper');
 const zip = require('gulp-zip');
 
